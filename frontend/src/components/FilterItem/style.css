@@ -1,0 +1,91 @@
+/* src/FilterSidebar.css */
+.filter-sidebar {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group h4 {
+    margin: 0 0 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 0.9em;
+    user-select: none;
+}
+
+.filter-group input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.filter-group input[type="radio"]:checked ~ .custom-radio {
+    background-color: black;
+}
+
+.filter-group input[type="radio"]:checked ~ .custom-radio:after {
+    display: block;
+}
+
+.custom-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.custom-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 5px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+}
+
+.date-range {
+    width: 100%;
+    padding: 5px;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.filter-count {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 0.8em;
+}

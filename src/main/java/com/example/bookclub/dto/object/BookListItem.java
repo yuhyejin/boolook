@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class BookListItem {
     private String bookTitle;
+    private String bookImg;
     private String author;
     private String issuer;
     private String collLibrary;

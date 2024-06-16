@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 
 // PropTypes 정의
-const BookListItem = {
+const BookListItemPropTypes = {
     bookTitle: PropTypes.string.isRequired,
+    bookImg: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
     issuer: PropTypes.string.isRequired,
     collLibrary: PropTypes.string.isRequired,
@@ -10,4 +11,4 @@ const BookListItem = {
     returnDate: PropTypes.string.isRequired,
 };
 
-export default BookListItem;
+export default BookListItemPropTypes;
